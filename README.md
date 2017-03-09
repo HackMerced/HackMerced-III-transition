@@ -17,3 +17,5 @@ To start the webserver type the following:
 ```bash
 $ python run.py
 ```
+
+The website should run on [localhost:5000](http://localhost:5000)
