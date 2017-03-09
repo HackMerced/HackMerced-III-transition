@@ -10,7 +10,7 @@ This repository will store the transition website for HackMerced 2017F. It is wr
 To run this website, you will need to have installed `python 2.7` or higher and `flask`. Once those programs have been installed, please enter the following:
 
 ```bash
-$ git clone https://github.com/HackMerced/hapi-api-server-boilerplate your-project-name
+$ git clone https://github.com/HackMerced/website-2017t.git
 ```
 
 To start the webserver type the following:
