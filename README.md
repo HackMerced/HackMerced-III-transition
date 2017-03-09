@@ -15,7 +15,7 @@ $ git clone https://github.com/HackMerced/website-2017t.git
 
 To start the webserver type the following:
 ```bash
-$ python run.py
+$ python index.py
 ```
 
 The website should run on [localhost:5000](http://localhost:5000)
