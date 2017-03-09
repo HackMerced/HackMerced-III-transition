@@ -3,7 +3,7 @@
 This repository will store the transition website for HackMerced 2017F. It is written in Python with the Flask framewrork and will be used to server some basic files as well as enable a microservice to list jobs from our internal filesystem. This readme will be updated on the full uses of this website and how to use it.
 
 [Website](http://hackmerced.com) |
-[Sponsor Us!](http://hackmerced.com/sponsor) |
+[Sponsor Us!](http://hackmerced.com/sponsor)
 
 ## Installation
 
