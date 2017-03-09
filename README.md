@@ -9,13 +9,26 @@ This repository will store the transition website for HackMerced 2017F. It is wr
 
 To run this website, you will need to have installed `python 2.7` or higher and `flask`. Once those programs have been installed, please enter the following:
 
+1. Clone the respository
 ```bash
 $ git clone https://github.com/HackMerced/website-2017t.git
 ```
 
+2. Initialize and active a virtual environment
+```bash
+$ virtualenv --no-site-packages env
+$ source env/bin/activate
+```
+
+3. Install dependencies
+```bash
+$ pip install -r dependencies.txt
+```
+
+4. Run server
 To start the webserver type the following:
 ```bash
-$ python run.py
+$ python index.py
 ```
 
 The website should run on [localhost:5000](http://localhost:5000)
