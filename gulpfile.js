@@ -41,7 +41,12 @@ gulp.task('js:watch', function () {
 });
 
 
-// create a default task and just log a message
+// default
 gulp.task('default', [ 'js', 'scss', 'scss:watch', 'js:watch'], function() {
   return gutil.log('Gulp is running!')
+});
+
+// production task
+gulp.task('production', [ 'js', 'scss' ], function() {
+  return gutil.log('Compiled everything!')
 });

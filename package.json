@@ -18,9 +18,9 @@
   },
   "scripts": {
     "test": "",
-    "build": "virtualenv --no-site-packages env && source env/bin/activate && pip install -r dependencies.txt && grunt production",
+    "build": "virtualenv --no-site-packages env && source env/bin/activate && pip install -r dependencies.txt && gulp production",
     "start": "python index.py",
-    "grunt": "grunt"
+    "grunt": "gulp"
   },
   "repository": {
     "type": "git",
