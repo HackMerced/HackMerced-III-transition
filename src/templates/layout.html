@@ -7,6 +7,11 @@
 		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/app.css') }}">
 	</head>
 	<body>
-		{% block body %}{% endblock %}
+		<aside class='content-image'></aside>
+		<content class='toTheRight'>
+			{% include 'header.html' %}
+			{% block body %}{% endblock %}
+		</content>
+
 	</body>
 </html>
