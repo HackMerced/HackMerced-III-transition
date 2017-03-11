@@ -102,3 +102,10 @@ bower_components
 
 #static compiled files
 src/static/*
+
+
+# Logs
+logs
+
+*.log
+npm-debug.log*
