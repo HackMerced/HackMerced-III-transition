@@ -1,0 +1,35 @@
+{
+  "name": "website-2017t",
+  "version": "1.0.0",
+  "description": "This repository will store the transition website for HackMerced 2017F. It is written in Python with the Flask framewrork and will be used to server some basic files as well as enable a microservice to list jobs from our internal filesystem. This readme will be updated on the full uses of this website and how to use it.",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1"
+  },
+  "scripts": {
+    "test": "",
+    "build": "virtualenv --no-site-packages env && source env/bin/activate && pip install -r dependencies.txt && grunt production",
+    "start": "python index.py",
+    "grunt": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackMerced/website-2017t.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackMerced/website-2017t/issues"
+  },
+  "homepage": "https://github.com/HackMerced/website-2017t#readme"
+}
