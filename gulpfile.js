@@ -5,18 +5,26 @@ const gulp  = require('gulp'),
       babel = require('gulp-babel'),
       sass = require('gulp-sass');
 
+
 const merge = require('merge-stream');
 
 const css_packages = [
   'node_modules/normalize.css/normalize.css'
 ]
 
+const js_packages = [
+  'node_modules/diaporama/dist/build.min.js'
+]
+
 gulp.task('js', () =>
-    gulp.src('serve/js/**/*.js')
+    merge(
+      gulp.src(js_packages)
+        .pipe(concat('import.js')),
+      gulp.src('serve/js/**/*.js')
         .pipe(babel({
             presets: ['es2015']
-        }))
-        .pipe(concat('app.js'))
+        })),
+      ).pipe(concat('app.js'))
         .pipe(gulp.dest('src/static/js'))
 );
 
@@ -33,16 +41,18 @@ gulp.task('scss', function () {
 
 
 gulp.task('scss:watch', function () {
-  gulp.watch('serve/scss/**/*.scss', ['scss']);
+  gulp.watch('serve/css/**/*.scss', ['scss']);
 });
 
 gulp.task('js:watch', function () {
   gulp.watch('serve/js/**/*.js', ['js']);
 });
 
+const development_tasks = [ 'js', 'scss', 'scss:watch', 'js:watch']
+
 
 // default
-gulp.task('default', [ 'js', 'scss', 'scss:watch', 'js:watch'], function() {
+gulp.task('default', development_tasks, function() {
   return gutil.log('Gulp is running!')
 });
 
