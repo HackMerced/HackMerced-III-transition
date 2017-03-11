@@ -1,0 +1,53 @@
+$image-count:4;
+$slider-time: 4;
+$slider-time-total: $slider-time*$image-count;
+$x: $image-count;
+
+@for $i from 1 through $image-count {
+
+  .image-element-#{$i} {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: $x;
+    -webkit-animation: slideshow #{$slider-time-total}s linear #{$slider-time*$i}s infinite;
+    -moz-animation: slideshow #{$slider-time-total}s linear #{$slider-time*$i}s infinite;
+    -ms-animation: slideshow #{$slider-time-total}s linear #{$slider-time*$i}s infinite;
+    -o-animation: slideshow #{$slider-time-total}s linear #{$slider-time*$i}s infinite;
+    animation: slideshow #{$slider-time-total}s linear #{$slider-time*$i}s infinite;
+  }
+
+  $x: $x - 1;
+}
+
+
+
+@-webkit-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-moz-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-ms-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-o-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}

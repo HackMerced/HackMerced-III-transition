@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "",
-    "build": "virtualenv --no-site-packages env && source env/bin/activate && pip install -r dependencies.txt && gulp production",
+    "build": "virtualenv --no-site-packages env && source env/bin/activate && pip install -r py_deps.txt && gulp production",
     "start": "python index.py",
     "gulp": "gulp"
   },
