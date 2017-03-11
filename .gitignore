@@ -93,5 +93,12 @@ ENV/
 # Rope project settings
 .ropeproject
 
-#idea
+#intelliDE
 .idea
+
+#gulp
+node_modules
+bower_components
+
+#static compiled files
+src/static/*
