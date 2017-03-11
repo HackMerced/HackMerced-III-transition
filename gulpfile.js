@@ -13,7 +13,7 @@ const css_packages = [
 ]
 
 const js_packages = [
-  'node_modules/diaporama/dist/build.min.js'
+  ''
 ]
 
 gulp.task('js', () =>
@@ -23,21 +23,22 @@ gulp.task('js', () =>
       gulp.src('serve/js/**/*.js')
         .pipe(babel({
             presets: ['es2015']
-        })),
+        }))
+        .pipe(concat('zzz_.js'))
       ).pipe(concat('app.js'))
         .pipe(gulp.dest('src/static/js'))
 );
 
-gulp.task('scss', function () {
-  return merge(
+gulp.task('scss', () =>
+      merge(
               gulp.src(css_packages)
                 .pipe(concat('import.css')),
               gulp.src('serve/css/**/*.scss')
                 .pipe(concat('app.scss'))
                 .pipe(sass().on('error', sass.logError))
             ).pipe(concat('app.css'))
-             .pipe(gulp.dest('src/static/css'));
-});
+             .pipe(gulp.dest('src/static/css'))
+);
 
 
 gulp.task('scss:watch', function () {

@@ -1,1 +1,4 @@
-/* left intentionally blank */
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  imageSlider();
+});
