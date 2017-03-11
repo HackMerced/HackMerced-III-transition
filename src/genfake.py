@@ -12,5 +12,5 @@ data['jobs'].append({
     'tags': ['engineering', 'leadership', 'full time'],
 })
 
-with open('./static/files/jobs.json', 'w') as outfile:
+with open('./static/jobs.json', 'w') as outfile:
     json.dump(data, outfile, indent=4)
