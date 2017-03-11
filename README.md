@@ -14,9 +14,9 @@ To run this website, you will need to have installed `python 2.7`, or higher, `n
   $ git clone https://github.com/HackMerced/website-2017t.git
   ```
 
-2. Build your environment
+2. Setup your environment
   ```bash
-  $ npm run build
+  $ npm run setup
   ```
 
 3. Run server
