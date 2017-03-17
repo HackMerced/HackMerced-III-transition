@@ -1,6 +1,6 @@
 aside{
-  width: 50%;
-  min-width: 200px;
+  width: calc(100% - 600px);
+  max-width: 50%;
   height: 100%;
   position: fixed;
 }
@@ -10,6 +10,7 @@ aside{
   min-width: 600px;
   position: absolute;
   right: 0px;
+  max-width: 50%;
 }
 
 .image-element {
