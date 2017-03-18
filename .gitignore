@@ -109,3 +109,6 @@ logs
 
 *.log
 npm-debug.log*
+
+#these are the credentials to log in. client_secret.json
+client_secret.json
