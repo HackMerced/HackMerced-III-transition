@@ -113,3 +113,7 @@ npm-debug.log*
 #these are the credentials to log in. client_secret.json
 src/client_secret.json
 env.json
+
+
+#deactivate
+deactivate
