@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "",
-    "setup": "pip install -r py_deps.txt  && npm install && npm run build && python ./src/genfake.py",
+    "setup": "pip install -r py_deps.txt  && npm install && npm run build && python ./tools/build.py",
     "build":"gulp production",
     "start": "python index.py",
     "gulp": "gulp"

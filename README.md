@@ -25,7 +25,9 @@ To run this website, you will need to have installed `python 2.7` or higher, `vi
   $ npm run setup
   ```
 
-4. Run server
+5. Modify and update env.json with your sample data
+
+6. Run server
   To start the webserver type the following:
   ```bash
   $ npm start
@@ -33,7 +35,7 @@ To run this website, you will need to have installed `python 2.7` or higher, `vi
 
   The website should run on [localhost:5000](http://localhost:5000)
 
-5. Cleanup
+7. Cleanup
   Remember to deactivate your virtual environment when you are done
   ```bash
   $ deactivate
