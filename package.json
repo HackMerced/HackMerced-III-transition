@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "",
-    "setup": "pip install -r py_deps.txt  && npm install && npm run build && python ./tools/build.py",
+    "setup": "pip install -r py_deps.txt && npm install -g gulp && npm install && npm run build && python ./tools/build.py",
     "build": "gulp production",
     "start": "python index.py",
     "jobs": "python ./tools/pullJobs.py",
