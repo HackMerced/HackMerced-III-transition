@@ -4,6 +4,7 @@
   "description": "This repository will store the transition website for HackMerced 2017F. It is written in Python with the Flask framewrork and will be used to server some basic files as well as enable a microservice to list jobs from our internal filesystem. This readme will be updated on the full uses of this website and how to use it.",
   "main": "index.js",
   "dependencies": {
+    "gulp": "^3.9.1",
     "jquery": "^3.2.1",
     "normalize.css": "^5.0.0"
   },
