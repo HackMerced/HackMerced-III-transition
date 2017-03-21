@@ -56,7 +56,7 @@ h5{
 }
 
 
-li{
+nav li{
   list-style: none;
   display: inline;
 }
@@ -67,8 +67,26 @@ button{
   border: 0px;
   border-radius: 5px;
   font:inherit;
+  cursor: pointer;
   color:$white;
+
+  &.slim{
+    height: auto;
+    padding: 5px 25px;
+    border: 2px solid $white;
+    background: none;
+
+  }
+
+  &.slim:hover, &.slim.selected{
+    background: $white;
+    color: $black;
+
+  }
+
 }
+
+
 
 p{
   margin: 20px 0px;
@@ -76,4 +94,12 @@ p{
 
 content{
   padding: 80px 50px;
+}
+
+.visible{
+  display: block;
+}
+
+a.disable-hover:after{
+    display: none;
 }

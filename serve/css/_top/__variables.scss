@@ -13,3 +13,11 @@ $default-h1-weight: 700;
 
 $default-h4-size: 18px;
 $default-h4-weight: 700;
+
+
+@mixin logo{
+  background-image: url("/static/img/logo.png");
+  background-position: center center;
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}

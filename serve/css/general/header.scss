@@ -16,4 +16,8 @@ nav{
   background: $white;
   border-radius: 100%;
   margin-right: 20px;
+
+
+  @include  logo;
+
 }
