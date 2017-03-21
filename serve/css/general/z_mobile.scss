@@ -55,6 +55,11 @@
 
   button{
     width: 100%;
+
+    &.slim:hover{
+      background-color: $purple;
+      color:$white;
+    }
   }
 
   .role-details button{
