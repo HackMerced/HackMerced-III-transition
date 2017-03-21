@@ -13,7 +13,7 @@ const css_packages = [
 ]
 
 const js_packages = [
-  ''
+  'node_modules/jquery/dist/jquery.min.js'
 ]
 
 gulp.task('js', () =>
@@ -40,6 +40,11 @@ gulp.task('scss', () =>
              .pipe(gulp.dest('src/static/css'))
 );
 
+gulp.task('img', () =>
+      gulp.src('serve/img/**/*.png')
+       .pipe(gulp.dest('src/static/img'))
+);
+
 
 gulp.task('scss:watch', function () {
   gulp.watch('serve/css/**/*.scss', ['scss']);
@@ -49,7 +54,12 @@ gulp.task('js:watch', function () {
   gulp.watch('serve/js/**/*.js', ['js']);
 });
 
-const development_tasks = [ 'js', 'scss', 'scss:watch', 'js:watch']
+
+gulp.task('img:watch', function () {
+  gulp.watch('serve/js/**/*.png', ['img']);
+});
+
+const development_tasks = [ 'js', 'scss', 'img', 'scss:watch', 'js:watch', 'img:watch']
 
 
 // default
@@ -58,6 +68,6 @@ gulp.task('default', development_tasks, function() {
 });
 
 // production task
-gulp.task('production', [ 'js', 'scss' ], function() {
+gulp.task('production', [ 'js', 'scss', 'img' ], function() {
   return gutil.log('Compiled everything!')
 });
