@@ -78,14 +78,21 @@ button{
 
   }
 
-  &.slim:hover, &.slim.selected{
+ &.slim.selected{
     background: $white;
     color: $purple;
   }
 
 }
 
+@media (min-width:600px) {
 
+  &.slim:hover{
+    background: $white;
+    color: $purple;
+  }
+
+}
 
 p{
   margin: 20px 0px;
