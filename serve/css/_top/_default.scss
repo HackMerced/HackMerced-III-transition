@@ -80,10 +80,13 @@ button{
 
   &.slim:hover, &.slim.selected{
     background: $white;
-    color: $black;
-
+    color: $purple;
   }
 
+  &.slim.selected:hover{
+    background: $purple;
+    color: $white;
+  }
 }
 
 
