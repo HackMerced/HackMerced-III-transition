@@ -1,0 +1,59 @@
+.role--lower{
+  display: inline;
+
+  * {
+    display: inline;
+    margin-right: 15px;
+    font-size: 14px;
+    color: $grey;
+  }
+}
+
+.role-title{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  max-width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+
+button.role-filter{
+  margin: 10px 20px 10px 0px;
+}
+
+.role{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 20px;
+}
+
+.join{
+  h5{
+    margin: 15px 0px 0px;
+  }
+
+  p{
+    margin:0px 0px;
+  }
+}
+
+.role-details{
+  background: #1F2335;
+  padding: 1px 20px 20px;
+  margin-bottom: 20px;
+  display: none;
+
+  li{
+    margin-left: 30px;
+  }
+
+  button{
+    margin: 20px 0px 0px;
+    padding: 10px 25px;
+    width: 150px;
+  }
+
+}

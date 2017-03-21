@@ -1,0 +1,60 @@
+@media (max-width:600px) {
+  header{
+    display: block;
+  }
+
+  .toTheRight{
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  nav{
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .logo{
+    margin: 0 auto 20px;
+
+  }
+
+  h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+
+  }
+
+  h4{
+    margin: 25px 0px 15px;
+    line-height: 1.5;
+  }
+
+  aside{
+    display: none;
+  }
+
+  .role{
+    display: block;
+  }
+
+  nav{
+    text-align: center;
+  }
+
+
+  .role--learn-more.slim {
+    margin-top: 15px;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  .role-details button{
+    width: 100%;
+  }
+
+}

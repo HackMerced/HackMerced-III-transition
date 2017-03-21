@@ -26,6 +26,9 @@ To run this website, you will need to have installed `python 2.7` or higher, `vi
   ```
 
 5. Modify and update env.json with your sample data
+```bash
+$ vi env.json
+```
 
 6. Run server
   To start the webserver type the following:
@@ -33,7 +36,7 @@ To run this website, you will need to have installed `python 2.7` or higher, `vi
   $ npm start
   ```
 
-  The website should run on [localhost:5000](http://localhost:5000)
+  The website should run on [localhost:4220](http://localhost:4220)
 
 7. Cleanup
   Remember to deactivate your virtual environment when you are done

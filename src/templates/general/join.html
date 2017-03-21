@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
-  <div class='information'>
+  <div class='join'>
     <h1>Build HackMerced</h1>
     <section>
       <article>
@@ -11,12 +11,54 @@
           We also have an FAQ for you below the job listings!
         </p>
       </article>
-      <article>
+      <article class='leadership-list'>
         <h4>HackMerced Leadership Information</h4>
         <h5>Filter Role</h5>
-        <div id='filter-jobs'></div>
+        <div id='filter-roles'></div>
         <h5>Role Listings</h5>
-        <div id='job-listing'></div>
+        <div id='role-listing'>
+          {% for job in jobs['jobs'] %}
+            <div class='role-container role--type-{{job.Division.replace(" ", "-")}}'>
+              <div class='role'>
+                <div class='role-left'>
+                  <div class='role-title'>
+                    {{ job.Role }}
+                  </div>
+                  <div class='role--lower'>
+                    <div class='role--lower-item role-type'>
+                      {{ job.Division }}
+                    </div>
+                    {% if job.Leadership == "Yes" %}
+                      <div class='role--lower-item'>
+                        Leadership
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <button class='role--learn-more slim'>
+                  Learn More
+                </button>
+              </div>
+              <div class='role-details'>
+                <h5>Description</h5>
+                <div class='role-description'>
+                  {{ job.Description }}
+                </div>
+                <h5>What we look for:</h5>
+                {% for reqs in job.Requirements %}
+                  <li> {{ reqs }} </li>
+                {% endfor %}
+                <h5>Things that aren't required but will help your application:</h5>
+                {% for opts in job.Optional %}
+                  <li> {{ opts }} </li>
+                {% endfor %}
+                <a target='_blank' class='disable-hover' href='https://docs.google.com/forms/d/e/1FAIpQLSe7WG24hMWQvsqNpeiEkJW78d3OjRsg0VO4Toxd4Y-I3RRzRw/viewform?usp=pp_url&entry.2139628244={{job.Role}}&entry.1781500597&entry.1640447617&entry.297979220&entry.2040870261'>
+                  <button>Apply now</button>
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </article>
       <article>
         <h4>FAQ</h4>
