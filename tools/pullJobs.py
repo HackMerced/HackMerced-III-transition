@@ -19,6 +19,7 @@ def updateJobList(jobRunnerI):
 
 
     scope = ['https://spreadsheets.google.com/feeds']
+    # misspelled corporate
     creds = ServiceAccountCredentials.from_json_keyfile_name(path + '/env.json', scope)
     client = gspread.authorize(creds)
 
